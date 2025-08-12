@@ -1,0 +1,14 @@
+# Funçao que remove os numeros que se repetem dentro da lista e a imprime com os numeros unicos
+
+def valores_unicos(lista):
+    vistos = []
+    for item in lista:
+        if item not in vistos:
+            vistos.append(item)
+    return vistos
+
+numeros = [987654321, 2, 7654321, 56, 1234567, 1, 88888, 3, 42, 999999,
+           5, 1000000000, 13, 101010, 7, 444, 9, 2, 13, 9]
+
+resultado = valores_unicos(numeros)
+print(resultado)
