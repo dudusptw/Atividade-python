@@ -1,0 +1,16 @@
+# Função que imprime o menor número da lista
+
+def menor_numero(lista):
+    if not lista:
+        return None  # Retorna None se a lista estiver vazia
+    menor = lista[0]  # Começa assumindo que o primeiro número é o menor
+    for numero in lista:
+        if numero < menor:
+            menor = numero 
+    return menor
+
+
+numeros = [987654321, 2, 7654321, 56, 1234567, 1, 88888, 3, 42, 999999,
+           5, 1000000000, 13, 101010, 7, 444, 9, 2, 13, 9]
+
+print(menor_numero(numeros)) 
