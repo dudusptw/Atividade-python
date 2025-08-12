@@ -1,0 +1,15 @@
+# Funçao que recebe uma lista de objetos e retorna uma nova lista apenas com os nomes
+
+def extrair_nomes(lista_objetos):
+    nomes = []
+    for obj in lista_objetos:
+        nomes.append(obj['nome']) 
+    return nomes
+
+pessoas = [
+    {"nome": "Luis", "idade": 18},
+    {"nome": "Paulo", "idade": 17},
+    {"nome": "Eric", "idade": 19}
+]
+
+print(extrair_nomes(pessoas))
